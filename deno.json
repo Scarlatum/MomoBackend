@@ -1,0 +1,28 @@
+{
+  "nodeModulesDir": true,
+  "tasks": {
+    "dev": "deno run --allow-all --watch ./source/application.ts"
+  },
+  "imports": {
+    "~/": "./source/",
+    "sharp": "npm:sharp",
+    "zod": "https://deno.land/x/zod@v3.22.2/mod.ts",
+    "surreal": "https://deno.land/x/surrealdb@v0.9.1/mod.ts",
+    "assert": "https://deno.land/std@0.203.0/assert/mod.ts"
+  },
+  "lint": {
+    "files": {
+      "include": [
+        "*.ts"
+      ]
+    },
+    "rules": {
+      "tags": ["recommended"]
+    }
+  },
+  "fmt": {
+    "singleQuote": false,
+    "semiColons": true,
+    "include": []
+  }
+}

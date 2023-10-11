@@ -1,0 +1,2 @@
+DEFINE TABLE user SCHEMAFULL;
+DEFINE FIELD nickname ON user TYPE string;
